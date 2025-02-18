@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>
+        Thymeleaf Demo
+    </title>
+    <!-- reference  CSS file @-> is Context path for the application giving access to application root -->
+    <link rel="stylesheet" th:href="@{/css/demo.css}" />
+</head>
+<body>
+    <p th:text="'The time on server is ' + ${theDate}" class="funny" />
+</body>
+
+</html>
